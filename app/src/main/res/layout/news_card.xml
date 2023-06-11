@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#272822"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/newsimage"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imagebelowtext"
+                android:layout_below="@+id/newsimage"
+                android:textColor="#cfb311"
+                android:text="News heading"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:padding="4dp"
+                android:maxLines="2"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:id="@+id/subtitletext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagebelowtext"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="3dp"
+                android:maxLines="3"
+                android:padding="4dp"
+                android:text="Sub heading"
+                android:textColor="#fafafa"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
